@@ -1,0 +1,36 @@
+.main {
+  margin-top: 150px;
+}
+
+
+.images {
+  width: 45%;
+  height: auto;
+  margin-left: 15px;
+}
+
+.button-link {
+  margin-right: 15px;
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .main {
+    margin-top: 30px;
+  }
+}
+
+
+@media screen and (max-width: 64em) {
+.main{
+  margin-top: 50px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .section-proyects {
+    grid-template-columns: 1fr;
+  }
+}
+

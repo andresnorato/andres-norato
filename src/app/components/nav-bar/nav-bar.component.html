@@ -1,0 +1,49 @@
+<div class="show-mobile">
+  <div>
+    <div class="title">
+      <h3>Andres Norato </h3>
+    </div>
+    <button class="icon-button" (click)="toggleMenu()">
+      <img class="icon-men" src="../../../assets/icons/icon_menu.svg" alt="menu" />
+    </button>
+  </div>
+  <div class="side-menu" [class.active]="activeMenu">
+    <div class="contan-mages">
+      <button role="button" (click)="toggleMenu()">
+        <img  src="../../../assets/icons/icon_close.png" alt="X" />
+      </button>
+    </div>
+    <ul>
+      <li><a routerLinkActive="active" routerLink="/home" (click)="toggleMenu()">Home</a></li>
+      <li>
+        <a routerLinkActive="active" routerLink="/proyects" (click)="toggleMenu()" >Portafolio</a>
+      </li>
+      <li>
+        <a  routerLinkActive="active"  routerLink="/contact" (click)="toggleMenu()" >Contacto</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="hide-mobile">
+  <div>
+    <nav class="container">
+      <div>
+        <h1>Andres Norato </h1>
+      </div>
+      <div>
+        <ul>
+          <li><a routerLinkActive="active" routerLink="/home">Home</a>
+          </li>
+          <li>
+            <a routerLinkActive="active" routerLink="/proyects">Portafolio</a>
+          </li>
+
+          <li>
+            <a routerLinkActive="active" routerLink="/contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
